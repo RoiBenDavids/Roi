@@ -7,11 +7,10 @@ import { Link, useHistory, withRouter } from 'react-router-dom';
 import { setToBack, setToContacts } from '../store/actions';
 
 function _Navbar(props) {
+    const { mediaQ } = useSelector(state => state.reducer)
     const [arrowPos, setArrowPos] = useState({ top: '75%', left: '50%' })
-    const [contactPos, setContactPos] = useState({ top: '50px', right: '50px', visibility: 'hidden' })
-    const { toContAnim, exit } = useSelector(state => state.reducer)
+    const [contactPos, setContactPos] = useState(mediaQ<=700?{top: '25px', right: '25px', visibility: 'hidden'}:{ top: '50px', right: '50px', visibility: 'hidden' })
     const dispatch = useDispatch()
-    const transition = { type: "spring", damping: 10, duration: 0.5 }
     const pos1={ visibility: 'visible',opacity:1,top:'40%',right:'40%',fontSize:'50px' }
     const pos2={ visibility: 'visible',opacity:1 ,top:'50px',right:'50px'}
 
@@ -40,12 +39,12 @@ function _Navbar(props) {
 
         }
         else {
-            setArrowPos({ top: '50px', left: '50px', transform: 'rotateZ(-630deg)' })
-            setContactPos(pos2)
+            setArrowPos(mediaQ<=700?{ top: '25px', left: '25px', transform: 'rotateZ(-630deg)' }:{ top: '50px', left: '50px', transform: 'rotateZ(-630deg)' })
+            setContactPos(mediaQ<=700?{...pos2,top:'25px',right:'25px'}:pos2)
         }
 
     }, [props.location.pathname])
-    console.log(contactPos);
+    console.log(mediaQ,contactPos);
     
     return (
         <section className="navbar ">

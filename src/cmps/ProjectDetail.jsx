@@ -8,6 +8,7 @@ import { projList } from '../service';
 import { DataSlider } from './DataSlider';
 
 export function ProjectDetails({ location }) {
+    const { mediaQ } = useSelector(state => state.reducer)
     const transition = { duration: 0.8, ease: [0.43, 0.13, 0.23, 0.96] };
     const [proj, setProj] = useState(null)
     const { toContAnim, exit, toBackAnim } = useSelector(state => state.reducer)
@@ -45,26 +46,26 @@ export function ProjectDetails({ location }) {
                 </li>
                 <li className="img">
                     <a href={proj.url}><motion.img
-                        initial={{ height: '100px', y: -205 }}
+                        initial={ mediaQ ? { height: '100px', y: -117 } :{ height: '100px', y: -165 }}
                         animate={{ height: '', y: 0 }}
                         transition={transition}
-                        exit={toContAnim ? exit : { height: '100px', y: -215 }}
+                        exit={toContAnim ? exit : mediaQ ? { height: '100px', y: -117 } : { height: '100px', y: -163 }}
                         src={proj.imgSrc} /></a>
                 </li>
                 <motion.li
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    >
+                >
                     <h2>Frontend</h2>
                     <h4>
-                        {proj.FE.map((item,idx)=>{
-                        if(idx===proj.FE.length-1) return item
-                        return `${item}, `
-                    })}</h4>
-                    <h2>Backend</h2> 
-                    <h4>{proj.BE.map((item,idx)=>{
-                        if(idx===proj.BE.length-1) return item
+                        {proj.FE.map((item, idx) => {
+                            if (idx === proj.FE.length - 1) return item
+                            return `${item}, `
+                        })}</h4>
+                    <h2>Backend</h2>
+                    <h4>{proj.BE.map((item, idx) => {
+                        if (idx === proj.BE.length - 1) return item
                         return ` ${item}, `
                     })}</h4>
                     <h2>DB</h2>

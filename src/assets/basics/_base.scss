@@ -18,7 +18,7 @@ body {
         height: 100vh;
         background-image: url(../imgs/smoke.jpg);
         background-size: cover;
-
+        overflow: hidden;
         >*{
             height: 100vh;
         }

@@ -89,23 +89,15 @@ export const projList=[
         imgSrc:'imgs/apsus.png'
     },
     {
-        name:'Troly',
+        name:'Portfolio',
         id:3,
         framework:'react',
-        DB:'mongo',
-        desc:'trip planner app, choose a trip from templates and customize it or build from scratch',
-        extra:'work on the same trip from different computers simutaniusly using sockets',
-        url:'https://trolly-app.herokuapp.com/#/',
-        imgSrc:'imgs/es6.png'
-    },
-    {
-        name:'Troly',
-        id:4,
-        framework:'react',
-        DB:'mongo',
-        desc:'trip planner app, choose a trip from templates and customize it or build from scratch',
-        extra:'work on the same trip from different computers simutaniusly using sockets',
-        url:'https://trolly-app.herokuapp.com/#/',
-        imgSrc:'imgs/html5.png'
+        FE:['react','hooks and redux','frame-motion'],
+        DB:'',
+        BE:[],
+        desc:'my protfolio was built with modern react (hooks)',
+        extra:'frame-motion was my main library for the anumations',
+        url:'',
+        imgSrc:'imgs/portfolio.png'
     }
 ]

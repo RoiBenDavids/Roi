@@ -34,7 +34,7 @@ export default function reducer(state = initialState, action) {
         case 'SET_MEDIAQ':
             return {
                 ...state,
-                mediaQ:action
+                mediaQ:action.mediaQ
             }
         
         default:
