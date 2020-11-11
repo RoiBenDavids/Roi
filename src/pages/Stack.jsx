@@ -19,7 +19,7 @@ export function Stack() {
                 exit={{ fontSize: '1rem', opacity: 0, rotateZ: -360, x: 200 }}
                 transition={transition}
             >
-                My Stack
+                My Stacks
             </motion.h1>
             <ul
                 className="stack-bar flex justify-center">
