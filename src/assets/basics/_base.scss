@@ -12,12 +12,16 @@ body {
     margin: 0;
     overflow: hidden;
     font-family: Paytone;
-    height: 100vh;
-    background-image: url(../imgs/smoke.jpg);
-    background-size: cover;
+   
     color: #f1ebe5;
-    .app-main>*{
+    .app-main{
         height: 100vh;
+        background-image: url(../imgs/smoke.jpg);
+        background-size: cover;
+
+        >*{
+            height: 100vh;
+        }
     }
 }
 h1,h2,h3,h4,h5,h6,p,ul,li{
