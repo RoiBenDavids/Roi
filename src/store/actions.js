@@ -15,7 +15,6 @@ export function setToBack(flag) {
     }
 }
 export function setMediaQ(mediaQ) {
-    console.log(mediaQ);
     return (dispatch) => {
         dispatch({type:'SET_MEDIAQ',mediaQ});
     }

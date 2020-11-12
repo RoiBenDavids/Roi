@@ -44,7 +44,6 @@ function _Navbar(props) {
         }
 
     }, [props.location.pathname])
-    console.log(mediaQ,contactPos);
     
     return (
         <section className="navbar ">

@@ -38,7 +38,7 @@ export function Home() {
                 transition={transition}
                 className="home-footer">
                 < h3>
-                    Tel Aviv,IS
+                    Tel Aviv
                 </h3>
             </motion.div>
             {/* <Link to="/stack">

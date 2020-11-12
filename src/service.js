@@ -97,7 +97,7 @@ export const projList=[
         BE:[],
         desc:'my protfolio was built with modern react (hooks)',
         extra:'frame-motion was my main library for the anumations',
-        url:'',
+        url:'https://github.com/RoiTheOne/Roi',
         imgSrc:'imgs/portfolio.png'
     }
 ]

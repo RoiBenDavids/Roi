@@ -18,13 +18,11 @@ export function ProjectDetails({ location }) {
 
     function loadProj() {
         const id = location.pathname.split('/')
-        console.log(id[id.length - 1]);
         const proj = projList.filter(proj => proj.id == id[id.length - 1])
         setProj(proj[0])
     }
     if (!proj) return <div>
     </div>
-    console.log(proj.FE);
 
     return (
         <motion.div className="projects projects-detail flex column align-center justify-center">
@@ -46,10 +44,10 @@ export function ProjectDetails({ location }) {
                 </li>
                 <li className="img">
                     <a href={proj.url}><motion.img
-                        initial={ mediaQ ? { height: '100px', y: -117 } :{ height: '100px', y: -165 }}
+                        initial={mediaQ ? { height: '100px', y: -163 } : { height: '100px', y: -163 }}
                         animate={{ height: '', y: 0 }}
                         transition={transition}
-                        exit={toContAnim ? exit : mediaQ ? { height: '100px', y: -117 } : { height: '100px', y: -163 }}
+                        exit={toContAnim ? exit : mediaQ ? { height: '100px', y: -163 } : { height: '100px', y: -163 }}
                         src={proj.imgSrc} /></a>
                 </li>
                 <motion.li
@@ -63,13 +61,14 @@ export function ProjectDetails({ location }) {
                             if (idx === proj.FE.length - 1) return item
                             return `${item}, `
                         })}</h4>
-                    <h2>Backend</h2>
-                    <h4>{proj.BE.map((item, idx) => {
+                    {proj.BE[0] && <h2>Backend</h2>}
+                    {proj.BE[0] && <h4>{proj.BE.map((item, idx) => {
                         if (idx === proj.BE.length - 1) return item
                         return ` ${item}, `
-                    })}</h4>
-                    <h2>DB</h2>
-                    <h4>{proj.DB}</h4>
+                    })}</h4>}
+                    {proj.DB && <h2>DB</h2>}
+                    {proj.DB && <h4>{proj.DB}</h4>}
+
 
                 </motion.li>
             </ul>

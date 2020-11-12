@@ -35,14 +35,14 @@ export function Contacts() {
                 animate={fb}
                 exit={{ x: 0, y: 0, opacity: 0 }}
                 href="https://www.facebook.com/BenDavidRoi/">
-                <i class="fab fa-facebook-square" />
+                <i className="fab fa-facebook-square" />
             </motion.a>
             <motion.a initial={{ opacity: 0 }}
                 transition={transition}
                 animate={li}
                 exit={{ x: 0, y: 0, opacity: 0 }}
                 href="https://www.linkedin.com/in/roi-ben-david-8000981b9">
-                <i class="fab fa-linkedin" />
+                <i className="fab fa-linkedin" />
             </motion.a>
             <motion.a
                 initial={{ opacity: 0 }}
@@ -50,7 +50,7 @@ export function Contacts() {
                 animate={mail}
                 exit={{ x: 0, y: 0, opacity: 0 }}
                 href="mailto:bendaroi@gmail.com">
-                <motion.i class="fas fa-at" />
+                <motion.i className="fas fa-at" />
             </motion.a>
             <motion.i
                 initial={{ opacity: 0 }}
@@ -64,7 +64,7 @@ export function Contacts() {
                 animate={git}
                 exit={{ x: 0, y: 0, opacity: 0 }}
                 href="https://github.com/RoiTheOne">
-                <i class="fab fa-github" />
+                <i className="fab fa-github" />
             </motion.a>
 
         </section>

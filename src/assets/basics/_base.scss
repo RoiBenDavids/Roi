@@ -16,11 +16,15 @@ body {
     color: #f1ebe5;
     .app-main{
         height: 100vh;
-        background-image: url(../imgs/smoke.jpg);
+        background-image: url(../imgs/smokeP.jpg);
         background-size: cover;
         overflow: hidden;
         >*{
             height: 100vh;
+        }
+        @media screen and (min-Width:700px){
+            background-image: url(../imgs/smoke2.jpg);
+            
         }
     }
 }
