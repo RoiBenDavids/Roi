@@ -44,10 +44,10 @@ export function ProjectDetails({ location }) {
                 </li>
                 <li className="img">
                     <a href={proj.url}><motion.img
-                        initial={mediaQ ? { height: '100px', y: -163 } : { height: '100px', y: -163 }}
+                        initial={mediaQ ? { height: '100px', y: -147 } : { height: '100px', y: -163 }}
                         animate={{ height: '', y: 0 }}
                         transition={transition}
-                        exit={toContAnim ? exit : mediaQ ? { height: '100px', y: -163 } : { height: '100px', y: -163 }}
+                        exit={toContAnim ? exit : mediaQ ? { height: '100px', y: -147 } : { height: '100px', y: -163 }}
                         src={proj.imgSrc} /></a>
                 </li>
                 <motion.li

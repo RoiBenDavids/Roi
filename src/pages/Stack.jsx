@@ -11,7 +11,6 @@ export function Stack() {
     const { mediaQ } = useSelector(state => state.reducer)
     const { toContAnim, exit, toBackAnim } = useSelector(state => state.reducer)
     const [page, setPage] = useState('list')
-console.log(mediaQ);
     return (
         <section className="stack flex column justify-center">
             <motion.h1
