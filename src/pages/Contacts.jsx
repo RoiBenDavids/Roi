@@ -57,7 +57,7 @@ export function Contacts() {
                 transition={transition}
                 animate={phone}
                 exit={{ x: 0, y: 0, opacity: 0 }}
-                class="fas fa-phone-square-alt" />
+                className="fas fa-phone-square-alt" />
             <motion.a
                 initial={{ opacity: 0 }}
                 transition={transition}

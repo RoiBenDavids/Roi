@@ -33,6 +33,9 @@
     i{
         position: absolute;
     }
+    h3{
+        padding: 0 4px;
+    }
     @keyframes change {
         10%, 90% {transform:translate3d(0,0,0);}
         // 16.66%, 29.32% {transform:translate3d(0,-25%,0);}

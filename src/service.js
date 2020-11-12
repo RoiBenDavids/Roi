@@ -74,7 +74,7 @@ export const projList=[
         desc:'trip planner app, choose a trip from templates and customize it or build from scratch',
         extra:'work on the same trip from different computers simutaniusly using sockets',
         url:'https://trolly-app.herokuapp.com/#/',
-        imgSrc:'imgs/trolly.png'
+        imgSrc:'imgs/trolly.jpg'
     },
     {
         name:'Apsus',
@@ -86,7 +86,7 @@ export const projList=[
         desc:'first assignment with react and git',
         extra:'three google apps: mail,keep and books',
         url:'https://trolly-app.herokuapp.com/#/',
-        imgSrc:'imgs/apsus.png'
+        imgSrc:'imgs/apsus.jpg'
     },
     {
         name:'Portfolio',
@@ -98,6 +98,6 @@ export const projList=[
         desc:'my protfolio was built with modern react (hooks)',
         extra:'frame-motion was my main library for the anumations',
         url:'https://github.com/RoiTheOne/Roi',
-        imgSrc:'imgs/portfolio.png'
+        imgSrc:'imgs/portfolio.jpg'
     }
 ]
