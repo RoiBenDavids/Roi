@@ -8,9 +8,10 @@ import { StackList } from '../cmps/StackList';
 
 export function Stack() {
     const transition = { duration: 0.8, ease: [0.43, 0.13, 0.23, 0.96] };
+    const { mediaQ } = useSelector(state => state.reducer)
     const { toContAnim, exit, toBackAnim } = useSelector(state => state.reducer)
     const [page, setPage] = useState('list')
-
+console.log(mediaQ);
     return (
         <section className="stack flex column justify-center">
             <motion.h1
@@ -42,7 +43,7 @@ export function Stack() {
                 <motion.li
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
-                    exit={toBackAnim|| toContAnim ? exit : { x: -80, y: -82, fontSize: '48px' }}
+                    exit={toBackAnim|| toContAnim ? exit : mediaQ?{x: -87, y: -71, fontSize: '48px' }: { x: -80, y: -82, fontSize: '48px' }}
                     transition={transition}
                 >
                     <Link to="/projects">Projects</Link>

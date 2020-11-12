@@ -85,7 +85,7 @@ export const projList=[
         BE:[],
         desc:'first assignment with react and git',
         extra:'three google apps: mail,keep and books',
-        url:'https://trolly-app.herokuapp.com/#/',
+        url:'https://roitheone.github.io/Apsus/',
         imgSrc:'imgs/apsus.jpg'
     },
     {
