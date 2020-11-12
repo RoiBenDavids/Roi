@@ -43,7 +43,7 @@ console.log(mediaQ);
                 <motion.li
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
-                    exit={toBackAnim|| toContAnim ? exit : mediaQ?{x: -87, y: -71, fontSize: '48px' }: { x: -80, y: -82, fontSize: '48px' }}
+                    exit={toBackAnim|| toContAnim ? exit : mediaQ?{x: -95, y: -71, fontSize: '48px' }: { x: -80, y: -82, fontSize: '48px' }}
                     transition={transition}
                 >
                     <Link to="/projects">Projects</Link>
