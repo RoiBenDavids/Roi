@@ -1,5 +1,4 @@
 .contacts{
-    // position: relative;
     a,i{
         width: 10%;
         height: 10%;
@@ -11,30 +10,6 @@
         align-items: center;
         justify-content: center;
     }
-    // .id-card-enter{
-    //     transform: translateY(-150px) translateX(-150px);
+   
 
-    // }
-    // .id-card-enter-active{
-    //     transform: translateY(-250px) translateX(20px);
-
-    // }
-    @keyframes spin {
-        // 0%{
-        //     opacity: 0;
-        // }
-        // 10%{
-
-        // }
-        // 100%{
-        //     opacity: 1;
-        //     // transform: translateY(-150px) translateX();
-        //     transform: rotateZ(360deg)  translateY(-150px)
-        // }
-        // 10%{
-        //     opacity: 1;
-        //     transform: translateY(-150px) translateX();
-        // }
-        
-    }
 }

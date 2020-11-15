@@ -25,7 +25,9 @@ export function ProjectDetails({ location }) {
     </div>
 
     return (
-        <motion.div className="projects projects-detail flex column align-center justify-center">
+        <motion.div
+        // initial={false}
+         className="projects projects-detail flex column align-center justify-center">
             <motion.h1
                 transition={transition}
                 exit={toContAnim ? exit : {}}
